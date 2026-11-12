@@ -1,0 +1,36 @@
+.text-input {
+  width: 100%;
+  min-height: 2.875rem;
+  padding: 0 var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  background: var(--color-surface);
+  transition:
+    border-color 140ms ease,
+    box-shadow 140ms ease;
+}
+
+.text-input::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.8;
+}
+
+.text-input:hover:not(:disabled) {
+  border-color: var(--color-text-muted);
+}
+
+.text-input:focus {
+  border-color: var(--color-brand);
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(49 88 201 / 14%);
+}
+
+.text-input[aria-invalid='true'] {
+  border-color: var(--color-danger);
+}
+
+.text-input:disabled {
+  cursor: not-allowed;
+  background: var(--color-surface-subtle);
+}

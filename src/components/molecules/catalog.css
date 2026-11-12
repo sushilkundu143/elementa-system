@@ -1,0 +1,47 @@
+.elementa-field { display: grid; gap: var(--space-2); }
+.elementa-field > label, .elementa-search-field > label { font-size: var(--font-size-sm); font-weight: 650; }
+.elementa-field > small { color: var(--color-text-muted); }
+.elementa-field > small[role='alert'] { color: var(--color-danger); }
+.elementa-choice { display: inline-flex; align-items: center; gap: var(--space-2); cursor: pointer; }
+.elementa-radio-group { display: grid; gap: var(--space-3); border: 0; padding: 0; }
+.elementa-radio-group legend { margin-bottom: var(--space-2); font-weight: 650; }
+.elementa-search-field { display: grid; gap: var(--space-2); }
+.elementa-search-field__controls { display: flex; gap: var(--space-2); }
+.elementa-search-field__controls button,
+.elementa-pagination button {
+  min-height: 2.75rem;
+  padding: 0 var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  background: var(--color-surface);
+  cursor: pointer;
+}
+.elementa-input-group, .elementa-form-actions, .elementa-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+.elementa-form-actions { justify-content: flex-end; }
+.elementa-alert, .elementa-card, .elementa-empty-state {
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+.elementa-alert { display: grid; gap: var(--space-2); }
+.elementa-alert--success { border-color: var(--color-success); }
+.elementa-alert--warning { border-color: var(--color-warning); }
+.elementa-alert--danger { border-color: var(--color-danger); }
+.elementa-breadcrumbs ol { display: flex; flex-wrap: wrap; gap: var(--space-2); list-style: none; padding: 0; }
+.elementa-breadcrumbs li + li::before { content: '/'; margin-right: var(--space-2); color: var(--color-text-muted); }
+.elementa-breadcrumbs [aria-current='page'] { font-weight: 700; }
+.elementa-pagination { justify-content: center; }
+.elementa-pagination button:disabled { cursor: not-allowed; opacity: 0.55; }
+.elementa-card h2 { margin-top: 0; }
+.elementa-list-item { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); padding: var(--space-3) 0; }
+.elementa-empty-state { display: grid; justify-items: center; text-align: center; gap: var(--space-2); }
+.elementa-empty-state h2, .elementa-empty-state p { margin: 0; }
+.elementa-empty-state p { color: var(--color-text-muted); }
+.elementa-tooltip { text-decoration: underline dotted; text-underline-offset: 0.2em; }

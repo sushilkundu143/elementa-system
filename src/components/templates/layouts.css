@@ -1,0 +1,22 @@
+.elementa-auth-layout { min-height: 100vh; display: grid; align-content: center; justify-items: center; gap: var(--space-6); padding: var(--space-5); }
+.elementa-auth-layout__brand { color: var(--color-brand); font-size: var(--font-size-lg); font-weight: 750; text-decoration: none; }
+.elementa-auth-layout > section { width: min(100%, 28rem); padding: var(--space-6); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); box-shadow: var(--shadow-card); }
+.elementa-dashboard-layout__body { display: grid; grid-template-columns: 15rem minmax(0, 1fr); min-height: calc(100vh - 5rem); }
+.elementa-dashboard-layout__body > aside { padding: var(--space-5); border-right: 1px solid var(--color-border); }
+.elementa-dashboard-layout__body > aside nav, .elementa-settings-layout > nav { display: grid; gap: var(--space-3); }
+.elementa-dashboard-layout__body > aside a, .elementa-settings-layout > nav a { padding: var(--space-2); color: var(--color-text); text-decoration: none; }
+.elementa-dashboard-layout__body > main { padding: var(--space-5) 0; }
+.elementa-content-layout { padding: var(--space-6) 0; }
+.elementa-content-layout h1 { color: var(--color-text); }
+.elementa-settings-layout { display: grid; grid-template-columns: 12rem minmax(0, 1fr); gap: var(--space-6); }
+.elementa-list-detail-layout { display: grid; grid-template-columns: minmax(14rem, 0.7fr) minmax(0, 1.3fr); gap: var(--space-5); }
+.elementa-list-detail-layout > aside, .elementa-list-detail-layout > section { padding: var(--space-4); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); }
+.elementa-form-layout { width: min(100%, 42rem); margin-inline: auto; }
+.elementa-form-layout > p { color: var(--color-text-muted); }
+.elementa-search-results-layout { width: min(100%, 56rem); margin-inline: auto; }
+@media (max-width: 720px) {
+  .elementa-dashboard-layout__body { grid-template-columns: 1fr; }
+  .elementa-dashboard-layout__body > aside { border-right: 0; border-bottom: 1px solid var(--color-border); }
+  .elementa-dashboard-layout__body > aside nav { display: flex; flex-wrap: wrap; }
+  .elementa-settings-layout, .elementa-list-detail-layout { grid-template-columns: 1fr; }
+}

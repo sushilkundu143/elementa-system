@@ -1,0 +1,12 @@
+.organization-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: var(--space-3);
+}
+
+@media (max-width: 520px) {
+  .organization-form {
+    grid-template-columns: 1fr;
+  }
+}
